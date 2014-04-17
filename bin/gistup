@@ -20,12 +20,8 @@ var argv = optimist.usage("Usage: \033[1mgistup\033[0m [options] -- [file …]" 
 + "Uploads the specified files to create a new Gist. If no files are specified," + os.EOL
 + "all files in the current directory are uploaded.")
     .options("public", {
-      default: true,
-      describe: "true for a public gist; false for a secret one"
-    })
-    .options("private", {
       default: false,
-      describe: "alias for --no-public"
+      describe: "true for a public gist; false for a secret one"
     })
     .options("description", {
       alias: "m",

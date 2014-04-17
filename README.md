@@ -26,10 +26,10 @@ If you just want to create a gist from a single file, try this instead:
 gistup index.html
 ```
 
-If you any specify options, such as a private gist, you must separate files from options with a double-dash (--) like this:
+If you any specify options, such as a public gist, you must separate files from options with a double-dash (--) like this:
 
 ```bash
-gistup --private -- index.html
+gistup --public -- index.html
 ```
 
 If you want to update your gist later, just use git:
@@ -47,7 +47,7 @@ Arguments:
 * --description, -m - provide an optional description
 * --interactive, -i - request confirmation of every file before adding
 * --exclude, -x - skip files matching pattern; may use wildcards
-* --private, --no-public - make a secret gist
+* --public - make a public gist
 * --open [url] - specify the URL to open after creating the gist
 * --no-open - don’t open the created gist in your web browser when done
 * --remote - specify the name of the git remote
